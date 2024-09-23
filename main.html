@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Online Learning Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.7);
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo h1 {
+            font-size: 2rem;
+            color: #3498db;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        .main-content {
+            padding-top: 80px;
+        }
+        .section {
+            padding: 4rem 5%;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 2rem 5%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+        .intro {
+            text-align: center;
+            padding: 6rem 5%;
+            color: white;
+        }
+        .intro h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .buttons {
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .btn.register {
+            background-color: #2ecc71;
+        }
+        .btn.register:hover {
+            background-color: #27ae60;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .course-item {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .course-item:hover {
+            transform: translateY(-5px);
+        }
+        .course-item h3 {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-form, .contact-info {
+            flex-basis: 48%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.8rem 2rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem 5%;
+        }
+        @media (max-width: 768px) {
+            .contact-form, .contact-info {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <header>
+        <div class="logo">
+            <h1>LMS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main class="main-content">
+        <section id="home" class="intro">
+            <h1>Welcome to Our Online Learning Management System</h1>
+            <p>Your gateway to a comprehensive, engaging, and flexible learning experience.</p>
+            <div class="buttons">
+                <a href="./login.html" class="btn">Login</a>
+                <a href="./register.html" class="btn register">Register</a>
+            </div>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>Our Courses</h2>
+            <p>Explore our wide range of courses to enhance your skills and knowledge.</p>
+            <div class="course-grid">
+                <div class="course-item">
+                    <h3>HTML</h3>
+                    <p>Learn the fundamentals of HTML to create the structure of web pages.</p>
+                </div>
+                <div class="course-item">
+                    <h3>CSS</h3>
+                    <p>Master CSS to style and layout your web pages with precision.</p>
+                </div>
+                <div class="course-item">
+                    <h3>JavaScript</h3>
+                    <p>Dive into JavaScript to add interactivity to your websites.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Understand DSA to write efficient code and solve complex problems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Learn more about our mission and values.</p>
+            <h3>Our Story</h3>
+            <p>Founded in 2020, our Learning Management System (LMS) was born out of a passion for education and a desire to make quality learning accessible to everyone. We believe that knowledge is power, and our platform is designed to empower learners from all walks of life.</p>
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide a comprehensive, user-friendly platform that connects learners with high-quality educational content. We strive to create an environment that fosters growth, curiosity, and lifelong learning.</p>
+            <h3>Our Team</h3>
+            <p>We are a diverse team of educators, technologists, and lifelong learners. Our combined expertise allows us to create a platform that not only meets the needs of today's learners but also anticipates the educational challenges of tomorrow.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or support.</p>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Education St, Learning City, 12345</p>
+                    <p>✉️ info@lms-example.com</p>
+                    <p>📞 +1 (123) 456-7890</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 LMS. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </footer>
+</body>
+</html>

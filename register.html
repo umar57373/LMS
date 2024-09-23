@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LMS</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <style>
+        .register-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 900px;
+            margin: 40px auto;
+        }
+        .form-container {
+            width: 50%;
+            padding: 1rem;
+        }
+        .image-container {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        legend {
+            font-size: 1.5rem;
+            color: #3498db;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .btn.reset {
+            background-color: #e74c3c;
+        }
+        .btn.reset:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LMS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./courses.html">Courses</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+                <li><a href="./contactus.html">Contact us</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Create Your Account</h1>
+            <p>Join our learning community and start your educational journey.</p>
+        </section>
+
+        <section class="register-container">
+            <div class="form-container">
+                <form id="registerForm" action="/register" method="POST" onsubmit="return validatePassword()">
+                    <fieldset>
+                        <legend>Registration Form</legend>
+                        <div class="form-group">
+                            <label for="username">Name:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" minlength="6" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" minlength="6" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="reset" class="btn reset">Reset</button>
+                    </fieldset>
+                </form>
+                <p>Already have an account? <a href="./login.html">Login here</a></p>
+            </div>
+
+            <div class="image-container">
+                <img src="../assests/images/th (2).jpeg" alt="Register Image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LMS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="./assests/scripit/register.js"></script>
+</body>
+</html>

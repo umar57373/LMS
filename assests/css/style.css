@@ -1,0 +1,219 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('../public/Learning-Management-System.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 2.4rem;
+    color: #ecf0f1;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+    background-color: rgba(236, 240, 241, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Main Section Styling */
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for readability */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 0 0.75rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+}
+
+.btn.register {
+    background-color: #e74c3c;
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.2);
+}
+
+.btn.register:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    color: #bdc3c7;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Dashboard Table Styling */
+.dashboard {
+    padding: 2rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* About Us Section */
+main {
+    padding: 2rem;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.about h2 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    color: #666;
+}
+
+.about p:first-of-type {
+    margin-top: 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LMS</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+        .contact-form {
+            width: 60%;
+        }
+        .contact-info {
+            width: 35%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 150px;
+        }
+        .btn.submit {
+            align-self: flex-start;
+        }
+        .contact-info p {
+            margin-bottom: 1rem;
+        }
+        .contact-info i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LMS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./mycourses.html">My Courses</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+                <li><a href="./contactus.html">Contact us</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./">Profile</a></li>
+                <li><a href="./main.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any inquiries or support.</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-form">
+                <h2>Send Message</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Mobile Number">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p><i class="icon-location"></i> 123 Education St, Learning City, 12345</p>
+                <p><i class="icon-email"></i> info@lms-example.com</p>
+                <p><i class="icon-phone"></i> +1 (123) 456-7890</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LMS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

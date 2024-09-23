@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LMS</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <style>
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+        .course-card {
+            width: 45%;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        .course-card p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LMS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./courses.html">Courses</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+                <li><a href="./contactus.html">Contact us</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Our Courses</h1>
+            <p>Explore our wide range of courses to enhance your skills and knowledge.</p>
+        </section>
+
+        <section class="courses-container">
+            <div class="course-card">
+                <h3>HTML</h3>
+                <p>Learn the fundamentals of HTML to create the structure of web pages.</p>
+            </div>
+            <div class="course-card">
+                <h3>CSS</h3>
+                <p>Master CSS to style and layout your web pages with precision.</p>
+            </div>
+            <div class="course-card">
+                <h3>Script</h3>
+                <p>Dive into scripting languages to add interactivity to your websites.</p>
+            </div>
+            <div class="course-card">
+                <h3>DSA</h3>
+                <p>Understand Data Structures and Algorithms to write efficient code.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LMS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
